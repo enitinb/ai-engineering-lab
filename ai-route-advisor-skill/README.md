@@ -2,7 +2,7 @@
 
 **Choose the right AI route before you choose the model.**
 
-AI Route Advisor is a vendor-neutral Claude Skill powered by the **R.E.S.E.T. framework**. It helps teams classify AI use cases, recommend the right route type, identify required guardrails, define evaluation needs, and control cost before a model is selected or a workflow reaches production.
+AI Route Advisor is a vendor-neutral Claude Skill powered by the [**R.E.S.E.T. framework**](https://www.linkedin.com/pulse/stop-chasing-model-start-choosing-nitin-eusebius-jpufc/). It helps teams classify AI use cases, recommend the right route type, identify required guardrails, define evaluation needs, and control cost before a model is selected or a workflow reaches production.
 
 It does not recommend specific vendors, products, or models by default. The skill recommends generic AI route types so each organization can map the guidance to its own approved stack, governance rules, and cost structure.
 
