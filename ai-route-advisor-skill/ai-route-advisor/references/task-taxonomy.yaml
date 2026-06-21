@@ -1,0 +1,70 @@
+task_types:
+  extraction:
+    description: Pull structured fields, entities, dates, totals, facts, or labels from content.
+    default_complexity: low
+  classification:
+    description: Assign categories, intent, priority, sentiment, risk levels, or routing labels.
+    default_complexity: low
+  formatting:
+    description: Reformat, normalize, clean, translate structure, or transform text into templates.
+    default_complexity: low
+  summarization:
+    description: Summarize one or more documents, conversations, tickets, transcripts, or records.
+    default_complexity: medium
+  drafting:
+    description: Produce emails, memos, reports, knowledge articles, proposals, or copy for human review.
+    default_complexity: medium
+  customer_support:
+    description: Assist with support responses, ticket summaries, knowledge retrieval, or follow-up tasks.
+    default_complexity: medium
+  coding:
+    description: Generate, review, explain, refactor, or test code.
+    default_complexity: high
+  research:
+    description: Gather, compare, synthesize, or critique information across sources.
+    default_complexity: high
+  strategy:
+    description: Analyze options, tradeoffs, risks, plans, decisions, or business implications.
+    default_complexity: high
+  legal_or_compliance:
+    description: Summarize, classify, review, or draft legal, contractual, policy, or compliance content.
+    default_complexity: high
+  financial_analysis:
+    description: Analyze financial data, forecasts, contracts, expenses, invoices, or business metrics.
+    default_complexity: high
+  healthcare_or_regulated:
+    description: Handle healthcare, regulated, safety-critical, or legally constrained information.
+    default_complexity: high
+  agentic_workflow:
+    description: Use tools, update systems, trigger actions, write records, send messages, or operate autonomously.
+    default_complexity: high
+  architecture_review:
+    description: Review technical architecture, design choices, system risks, dependencies, or tradeoffs.
+    default_complexity: high
+  other:
+    description: Use when none of the standard types fit. Classify dimensions manually.
+    default_complexity: unknown
+
+complexity_rules:
+  low:
+    signals:
+      - single-step
+      - structured input
+      - deterministic output
+      - low ambiguity
+      - easy automated validation
+  medium:
+    signals:
+      - some judgment required
+      - longer context
+      - business tone or domain context matters
+      - output is reviewed by humans
+  high:
+    signals:
+      - multi-step reasoning
+      - high ambiguity
+      - complex code or architecture
+      - high business impact
+      - multi-document synthesis
+      - external actions
+      - regulated or safety-sensitive work

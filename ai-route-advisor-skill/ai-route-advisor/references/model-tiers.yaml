@@ -1,0 +1,61 @@
+routes:
+  low_cost_tier:
+    use_when:
+      - low complexity
+      - high volume
+      - structured output
+      - low sensitivity
+      - easy validation
+    avoid_when:
+      - regulated data
+      - high-stakes decision
+      - complex reasoning
+      - customer-facing without review
+      - external actions
+  mid_tier:
+    use_when:
+      - medium complexity
+      - business drafting
+      - summarization
+      - routine analysis
+      - human-reviewed output
+    avoid_when:
+      - strict regulated workflows without approval
+      - deep reasoning beyond eval threshold
+      - autonomous action without controls
+  frontier_or_reasoning_tier:
+    use_when:
+      - high complexity
+      - deep reasoning
+      - complex coding
+      - architecture review
+      - high-stakes synthesis
+      - difficult edge cases
+    avoid_when:
+      - simple high-volume tasks
+      - unapproved sensitive data route
+      - cost ceiling is strict and quality does not justify escalation
+  approved_enterprise_route:
+    use_when:
+      - confidential data
+      - customer data
+      - employee data
+      - regulated data
+      - source code or sensitive business data
+      - auditability required
+    avoid_when:
+      - none when governance requires it
+  human_review_route:
+    use_when:
+      - legal, financial, medical, safety, compliance, or high-impact decisions
+      - low confidence
+      - policy ambiguity
+      - external action
+    avoid_when:
+      - fully automated output is prohibited
+  evaluation_queue:
+    use_when:
+      - new model or route is proposed
+      - current workflow is being replaced
+      - no eval evidence exists
+      - output affects users, customers, compliance, money, code, or operations

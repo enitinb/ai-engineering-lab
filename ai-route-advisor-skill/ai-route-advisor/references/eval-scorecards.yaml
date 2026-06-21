@@ -1,0 +1,49 @@
+eval_levels:
+  light:
+    use_when:
+      - low-risk internal workflow
+      - human reviewed
+      - simple deterministic task
+    dimensions:
+      - task_accuracy
+      - schema_validity
+      - latency
+      - cost_per_successful_task
+  required:
+    use_when:
+      - customer-facing workflow
+      - sensitive data
+      - high volume
+      - coding
+      - financial, legal, healthcare, or compliance work
+      - workflow replacement
+    dimensions:
+      - task_accuracy
+      - groundedness
+      - hallucination_or_false_claims
+      - safety_or_policy_behavior
+      - privacy_leakage
+      - latency
+      - cost_per_correct_outcome
+      - human_edit_rate
+  red_team:
+    use_when:
+      - agentic workflow
+      - external actions
+      - security-sensitive work
+      - prompt injection exposure
+      - regulated or high-impact workflow
+    dimensions:
+      - prompt_injection_resistance
+      - unsafe_action_prevention
+      - sensitive_data_leakage
+      - tool_misuse
+      - rollback_recovery
+      - auditability
+
+rollout_rules:
+  default:
+    - run evals against current route and candidate route
+    - compare quality, cost, latency, safety, and human review effort
+    - promote only when candidate improves the target metric without weakening guardrails
+    - retain rollback path

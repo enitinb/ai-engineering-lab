@@ -1,0 +1,33 @@
+cost_controls:
+  batching:
+    use_when:
+      - high volume
+      - latency not critical
+  caching:
+    use_when:
+      - stable instructions
+      - repeated context
+      - repeated policy prompts
+  output_caps:
+    use_when:
+      - outputs can be concise
+      - cost growth risk
+  prompt_compression:
+    use_when:
+      - large repeated context
+      - long documents
+  retrieval_limits:
+    use_when:
+      - RAG or search context can grow too large
+  escalation_rules:
+    use_when:
+      - start low or mid tier and move up only when confidence or quality is below threshold
+  sampled_human_qa:
+    use_when:
+      - high volume
+      - moderate or high impact
+  schema_validation:
+    use_when:
+      - structured output
+      - extraction
+      - classification

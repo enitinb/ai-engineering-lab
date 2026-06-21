@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Route Advisor R.E.S.E.T. Recommendation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "use_case",
+    "task_type",
+    "complexity",
+    "data_sensitivity",
+    "volume",
+    "latency_need",
+    "business_impact",
+    "recommended_ai_route",
+    "why_this_route",
+    "required_guardrails",
+    "evaluation_plan",
+    "cost_controls",
+    "escalation_rule",
+    "decision"
+  ],
+  "properties": {
+    "use_case": {"type": "string"},
+    "task_type": {"type": "string"},
+    "complexity": {"enum": ["low", "medium", "high", "unknown"]},
+    "data_sensitivity": {"enum": ["public", "internal", "confidential", "customer", "employee", "regulated", "unknown"]},
+    "volume": {"enum": ["low", "medium", "high", "unknown"]},
+    "latency_need": {"enum": ["real_time", "interactive", "batch", "unknown"]},
+    "business_impact": {"enum": ["low", "medium", "high", "unknown"]},
+    "recommended_ai_route": {"enum": ["low_cost_tier", "mid_tier", "frontier_or_reasoning_tier", "approved_enterprise_route", "human_review_route", "evaluation_queue"]},
+    "why_this_route": {"type": "string"},
+    "required_guardrails": {"type": "array", "items": {"type": "string"}},
+    "evaluation_plan": {"type": "array", "items": {"type": "string"}},
+    "cost_controls": {"type": "array", "items": {"type": "string"}},
+    "escalation_rule": {"type": "string"},
+    "decision": {"type": "string"}
+  }
+}

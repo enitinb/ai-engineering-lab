@@ -1,0 +1,47 @@
+data_sensitivity:
+  public:
+    description: Publicly available or approved for broad external sharing.
+    default_controls:
+      - basic_logging
+  internal:
+    description: Internal but not confidential. Could include ordinary operational context.
+    default_controls:
+      - access_control
+      - basic_logging
+  confidential:
+    description: Confidential company data, non-public plans, internal strategy, source code, contracts, or sensitive documents.
+    default_controls:
+      - approved_route_only
+      - access_control
+      - retention_review
+      - audit_logging
+      - human_review_for_high_impact
+  customer:
+    description: Customer conversations, tickets, account data, identifiers, or records.
+    default_controls:
+      - approved_route_only
+      - pii_handling
+      - audit_logging
+      - retention_review
+      - quality_monitoring
+  employee:
+    description: HR data, performance information, personal employee details, compensation, or personnel records.
+    default_controls:
+      - approved_route_only
+      - privacy_review
+      - audit_logging
+      - human_review_required
+  regulated:
+    description: Data subject to legal, contractual, industry, privacy, or safety restrictions.
+    default_controls:
+      - approved_route_only
+      - compliance_review
+      - retention_review
+      - audit_logging
+      - human_review_required
+      - production_change_control
+  unknown:
+    description: Sensitivity is not stated or cannot be inferred.
+    default_controls:
+      - ask_or_assume_restricted
+      - avoid_public_unapproved_routes

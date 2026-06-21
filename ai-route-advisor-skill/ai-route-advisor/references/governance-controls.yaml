@@ -1,0 +1,31 @@
+controls:
+  approved_route_only:
+    use_for:
+      - confidential
+      - customer
+      - employee
+      - regulated
+      - source_code
+    description: Use only routes approved by the organization for the relevant data class.
+  access_control:
+    description: Restrict who can submit data, view outputs, and manage prompts or policies.
+  retention_review:
+    description: Confirm retention, logging, deletion, and training-use expectations before production.
+  audit_logging:
+    description: Log prompt class, route, model tier, user, timestamp, decision, and output status.
+  pii_handling:
+    description: Minimize, mask, redact, or avoid sending personal data where possible.
+  human_review_required:
+    description: Require a qualified human to approve outputs before action or publication.
+  human_review_for_high_impact:
+    description: Use human review when an output affects customers, money, legal posture, code, or operational decisions.
+  tool_allowlist:
+    description: Limit tool use to approved tools and data sources.
+  action_approval:
+    description: Require approval before sending messages, updating records, committing code, triggering workflows, or changing systems.
+  sandboxing:
+    description: Run code, tools, and agent actions in a limited environment with rollback.
+  monitoring:
+    description: Track errors, complaints, policy violations, low-confidence outputs, and drift.
+  production_change_control:
+    description: Require eval evidence, rollback plan, owner approval, and rollout stage gates before production changes.
