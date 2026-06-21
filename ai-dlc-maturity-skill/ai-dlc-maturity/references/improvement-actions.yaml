@@ -1,0 +1,17 @@
+improvement_actions:
+  common_high_priority:
+    - "Define explicit human decision points across the lifecycle"
+    - "Version-control AI rules, prompts, steering, and hooks"
+    - "Capture acceptance criteria before AI implementation begins"
+    - "Apply existing quality and security gates to AI-generated work without exemption"
+    - "Link intent, design rationale, approval, code, tests, and deployment evidence"
+    - "Track cost and token usage by team, product, and workflow"
+    - "Feed defects and incidents back into shared rules, prompts, tests, and gates"
+  people_process:
+    - "Assign human owners for AI-generated artifacts"
+    - "Create an escalation path for uncertain or risky AI output"
+    - "Align product, engineering, QA, security, architecture, and operations on review rituals"
+  brownfield:
+    - "Add characterization tests before modifying untested behavior"
+    - "Require developer validation of AI-derived system understanding"
+    - "Start with smaller work units and higher review density"

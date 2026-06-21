@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-DLC Maturity Assessment",
+  "type": "object",
+  "required": [
+    "scope",
+    "overall_maturity",
+    "summary",
+    "lifecycle_scores",
+    "pillar_scores",
+    "people_process_alignment",
+    "top_gaps",
+    "priority_actions",
+    "assumptions"
+  ],
+  "properties": {
+    "scope": { "type": "string" },
+    "overall_maturity": {
+      "type": "string",
+      "enum": ["level_1_ad_hoc", "level_2_repeatable", "level_3_governed", "level_4_optimized"]
+    },
+    "summary": { "type": "string" },
+    "lifecycle_scores": {
+      "type": "object",
+      "required": ["intent_to_work", "build_and_validate", "run_and_learn"],
+      "properties": {
+        "intent_to_work": { "type": "string" },
+        "build_and_validate": { "type": "string" },
+        "run_and_learn": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "pillar_scores": {
+      "type": "object",
+      "required": ["operational_excellence", "security", "reliability", "performance_efficiency", "cost_optimization", "sustainability"],
+      "properties": {
+        "operational_excellence": { "type": "string" },
+        "security": { "type": "string" },
+        "reliability": { "type": "string" },
+        "performance_efficiency": { "type": "string" },
+        "cost_optimization": { "type": "string" },
+        "sustainability": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "people_process_alignment": {
+      "type": "object",
+      "required": ["maturity", "strengths", "gaps", "priority_actions"],
+      "properties": {
+        "maturity": { "type": "string" },
+        "strengths": { "type": "array", "items": { "type": "string" } },
+        "gaps": { "type": "array", "items": { "type": "string" } },
+        "priority_actions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "top_gaps": { "type": "array", "items": { "type": "string" } },
+    "priority_actions": { "type": "array", "items": { "type": "string" } },
+    "evidence_gaps": { "type": "array", "items": { "type": "string" } },
+    "brownfield_notes": { "type": "array", "items": { "type": "string" } },
+    "assumptions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

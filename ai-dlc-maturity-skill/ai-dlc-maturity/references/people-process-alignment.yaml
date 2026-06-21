@@ -1,0 +1,20 @@
+people_process_alignment:
+  purpose: "Assess whether people, decision rights, workflow rules, and feedback loops are aligned enough for AI-enabled delivery to be trusted."
+  people_checks:
+    - "Human decision points are explicit across intent, design, implementation, review, deployment, and remediation"
+    - "Accountability for AI-generated artifacts remains assigned to humans"
+    - "Product, engineering, QA, security, architecture, and operations participate when risk warrants it"
+    - "Review expectations are consistent across teams"
+    - "Teams know how to escalate uncertain or risky AI output"
+    - "Engineers are trained on safe AI-assisted delivery practices"
+  process_checks:
+    - "Personal prompting habits are converted into shared, version-controlled practices"
+    - "Workflow rules are reviewed and changed through a controlled process"
+    - "Validation happens before implementation when requirements or design are ambiguous"
+    - "AI-generated work is linked to intent, design decision, approval, and test evidence"
+    - "Defects and incidents update rules, prompts, tests, and gates"
+  maturity_interpretation:
+    level_1_ad_hoc: "AI usage depends on individuals and is not repeatable across the team."
+    level_2_repeatable: "Shared habits exist, but ownership, review expectations, and escalation paths vary."
+    level_3_governed: "Roles, decision rights, approvals, and shared workflow rules are explicit and versioned."
+    level_4_optimized: "People and process alignment is measured, improved, and scaled across teams."

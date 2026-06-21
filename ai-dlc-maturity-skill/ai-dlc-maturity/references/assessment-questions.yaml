@@ -1,0 +1,43 @@
+questions:
+  mindset_check:
+    - "Where does validation first happen: intent, design, pull request, or production?"
+    - "Can shipped AI-generated work be traced back to intent, design rationale, approval, and tests?"
+    - "Does the workflow live in shared versioned configuration or individual habits?"
+  operational_excellence:
+    intent_to_work:
+      - "Are requirements captured as durable specifications with acceptance criteria?"
+      - "Is decision rationale persisted?"
+    build_and_validate:
+      - "Are rules, prompts, steering, and hooks version-controlled and reviewed?"
+      - "Is drift detected when rules change?"
+    run_and_learn:
+      - "Do incidents and maintenance findings feed back into shared workflow rules?"
+  security:
+    intent_to_work:
+      - "Are data categories permitted in prompts explicitly declared?"
+      - "Are context sources scoped and audited?"
+    build_and_validate:
+      - "Do scans cover code, dependencies, secrets, IaC, and AI-specific supply chain risks?"
+      - "Are agent identities scoped with least privilege?"
+    run_and_learn:
+      - "Do production actions proposed by AI require approval unless explicitly low-risk?"
+  reliability:
+    intent_to_work:
+      - "Is plan-execute-validate the default lifecycle?"
+      - "Is human approval required at important boundaries?"
+    build_and_validate:
+      - "Do existing quality gates apply to AI-generated work without exemption?"
+      - "Are work units kept small enough for meaningful review?"
+    run_and_learn:
+      - "Are rollback, canary, feature flag, or equivalent safety mechanisms intact?"
+  performance_efficiency:
+    - "Is analysis depth chosen deliberately?"
+    - "Is context pruned, cached, and reused where appropriate?"
+    - "Are tasks scoped narrowly enough for reliable output?"
+  cost_optimization:
+    - "Is cost attribution in place before scaling?"
+    - "Are token, inference, review, and rework costs visible by team or workflow?"
+    - "Are productivity claims measured against a baseline?"
+  sustainability:
+    - "Is the smallest model or route that meets quality requirements used?"
+    - "Is inference compute or token usage trended over time?"

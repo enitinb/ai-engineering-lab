@@ -1,0 +1,8 @@
+brownfield_checks:
+  trigger_terms: ["brownfield", "legacy", "existing system", "modernization", "refactor", "migration", "untested code"]
+  questions:
+    - "Does understanding precede specifying for the specific change area?"
+    - "Do developers validate AI-derived static and dynamic models before generation?"
+    - "Are characterization tests written before changing untested code?"
+    - "Is autonomy earned through smaller work units and higher review density?"
+    - "Are dependencies, integration points, and hidden assumptions documented before AI changes code?"

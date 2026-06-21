@@ -1,0 +1,19 @@
+pillars:
+  operational_excellence:
+    description: "Makes the AI-enabled delivery practice observable, versioned, improvable, and traceable."
+    evidence_examples: ["versioned rules", "audit trails", "linked intent and test evidence", "workflow dashboards"]
+  security:
+    description: "Controls prompt context, data exposure, agent identity, tool access, supply-chain risk, and approvals."
+    evidence_examples: ["data classification", "least privilege", "tool allowlists", "secrets scanning", "approval gates"]
+  reliability:
+    description: "Ensures non-deterministic AI output is verified through tests, gates, small work units, and human accountability."
+    evidence_examples: ["unit tests", "integration tests", "CI gates", "human signoff", "rollback path"]
+  performance_efficiency:
+    description: "Uses right-sized tasks, context discipline, model tiering, and bounded analysis depth."
+    evidence_examples: ["task sizing rules", "context budgets", "model tier rules", "cached context"]
+  cost_optimization:
+    description: "Tracks and manages token, inference, review, and rework cost before scaling usage."
+    evidence_examples: ["cost attribution", "budget alerts", "usage dashboards", "per-workflow spend"]
+  sustainability:
+    description: "Reduces waste through right-sized models, prompt pruning, context reuse, and visible inference trends."
+    evidence_examples: ["smallest viable model", "cached context", "token trend reports", "prompt pruning"]

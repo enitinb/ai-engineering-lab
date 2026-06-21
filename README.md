@@ -12,9 +12,10 @@ This repo is my way of giving back to the AI engineering and SDLC community by s
 
 ## Project Index
 
-| Project                | Status | What it does                                                                                                                                                                                      | Link                                                                                           |
-| ---------------------- | -----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| AI Route Advisor Skill | Active | A vendor-neutral Claude Skill that helps teams classify AI use cases, recommend the right AI route, identify guardrails, define evaluation needs, and think through cost before choosing a model. | [Open project](https://github.com/enitinb/ai-engineering-lab/tree/main/ai-route-advisor-skill) |
+| Project                       | Status | What it does                                                                                                                                                                                                       | Link                                                                                           |
+| ----------------------------- | -----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| AI Route Advisor Skill        | Active | A vendor-neutral Claude Skill that helps teams classify AI use cases, recommend the right AI route, identify guardrails, define evaluation needs, and think through cost before choosing a model.                  | [Open project](https://github.com/enitinb/ai-engineering-lab/tree/main/ai-route-advisor-skill) |
+| AI-DLC Maturity Advisor Skill | Active | A Claude Skill that helps teams assess whether their AI-enabled SDLC is safe, repeatable, traceable, governed, and ready to scale across people, process, engineering controls, evidence, and improvement actions. | [Open project](https://github.com/enitinb/ai-engineering-lab/tree/main/ai-dlc-maturity-skill)  |
 
 ## Focus Areas
 

@@ -1,0 +1,15 @@
+evidence_catalog:
+  strong_evidence:
+    - "version-controlled specs, rules, prompts, hooks, or agent configurations"
+    - "linked tickets, design decisions, approvals, commits, tests, and deployments"
+    - "CI/CD gates and scan results"
+    - "audit trails for agent actions and model usage"
+    - "cost, token, quality, reliability, and incident dashboards"
+    - "post-incident updates to rules, prompts, tests, or gates"
+  weak_evidence:
+    - "verbal assurance without artifacts"
+    - "one engineer's chat history"
+    - "unreviewed prompt snippets"
+    - "local-only scripts with no ownership"
+    - "manual review with no criteria"
+  evidence_rule: "Prefer artifacts over claims. If evidence is missing, mark the finding as an evidence gap and recommend the smallest next artifact that would prove the practice."

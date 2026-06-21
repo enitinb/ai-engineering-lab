@@ -1,0 +1,26 @@
+lifecycle_activities:
+  intent_to_work:
+    label: "Intent-to-Work"
+    maps_to: "Inception and planning"
+    checks:
+      - "Intent is captured as durable, version-controlled specification, not chat history"
+      - "Acceptance criteria exist before implementation"
+      - "Ambiguity is resolved early with product, engineering, QA, security, and architecture input when relevant"
+      - "Decision rationale is persisted"
+  build_and_validate:
+    label: "Build-and-Validate"
+    maps_to: "Construction, coding, testing, review, and CI/CD"
+    checks:
+      - "AI-generated work follows the same review and CI gates as human-written work"
+      - "Agent rules, prompts, steering, and hooks are version-controlled"
+      - "Work units are small enough for review"
+      - "Security, dependency, secrets, IaC, and quality scanning run before merge"
+      - "The agent or workflow consumes feedback from validation gates"
+  run_and_learn:
+    label: "Run-and-Learn"
+    maps_to: "Deployment, operations, incidents, maintenance, and feedback loops"
+    checks:
+      - "Deployments proposed by AI pass approval gates"
+      - "Operational incidents and maintenance findings feed back into rules, prompts, tests, and runbooks"
+      - "Agent execution is observable enough to audit"
+      - "Cost, reliability, and quality are tracked by team, product, or workflow"

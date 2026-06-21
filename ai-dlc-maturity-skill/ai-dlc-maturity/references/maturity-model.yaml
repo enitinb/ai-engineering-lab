@@ -1,0 +1,34 @@
+maturity_levels:
+  level_1_ad_hoc:
+    label: "Level 1, Ad hoc"
+    meaning: "Individuals use AI, but the practice depends on personal prompting, chat history, and informal judgment."
+    signals:
+      - "AI usage is not consistently visible to the team"
+      - "Validation happens late or inconsistently"
+      - "Prompts, rules, and agent behavior are not versioned"
+      - "AI-generated work cannot be reliably traced back to intent, approval, and test evidence"
+  level_2_repeatable:
+    label: "Level 2, Repeatable"
+    meaning: "Teams have shared conventions, prompts, or review habits, but governance and evidence are uneven."
+    signals:
+      - "Common workflows exist within teams"
+      - "Human review happens, but decision rights vary"
+      - "Some AI artifacts are traceable"
+      - "Quality gates exist but may not fully account for AI-generated work"
+  level_3_governed:
+    label: "Level 3, Governed"
+    meaning: "AI-enabled delivery is versioned, reviewed, traceable, and integrated into engineering controls."
+    signals:
+      - "Rules, prompts, hooks, and agent configurations are version-controlled"
+      - "AI-generated work passes the same quality, security, and approval gates as other work"
+      - "Traceability connects intent, design, implementation, approval, and tests"
+      - "People and process decision points are explicit"
+  level_4_optimized:
+    label: "Level 4, Optimized"
+    meaning: "The practice is measured, improved, automated where safe, and governed across teams."
+    signals:
+      - "Outcome metrics, cost, quality, reliability, and audit data are trended"
+      - "Production lessons feed back into shared rules, tests, prompts, and gates"
+      - "Teams compare practices using evidence"
+      - "Automation expands only after measured trust increases"
+scoring_rule: "Assign the lowest level that describes the weakest material constraint. Do not average away critical gaps in security, traceability, or human decision rights."
