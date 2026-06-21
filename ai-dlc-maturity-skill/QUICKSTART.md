@@ -30,7 +30,7 @@ This explains the Skill, the maturity model, lifecycle stages, people/process al
 /ai-dlc-maturity We are using AI in our SDLC. Are we doing it the right way?
 ```
 
-The Skill should create a Markdown assessment intake artifact in the response so the team can fill it out, review it, and bring it back for assessment.
+The Skill should start a persistent Markdown assessment artifact. When file access is available, it can create or update `outputs/ai-dlc-maturity-assessment.md`. If file access is not available, it shows the same artifact in the chat so the team can fill it out, review it, and bring it back for assessment.
 
 ## 4. Run an assessment from enough context
 
