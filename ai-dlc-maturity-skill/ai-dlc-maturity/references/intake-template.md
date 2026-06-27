@@ -2,6 +2,21 @@
 
 Use this Markdown artifact to collect enough context for an AI-DLC maturity assessment. Fill what you know, leave unknowns as `Unknown`, and add links or evidence where possible. The completed file can be reviewed by the team and then provided back to the AI-DLC Maturity Advisor for assessment.
 
+## Contents
+
+- 1. Assessment Scope
+- 2. Current AI Usage in the SDLC
+- 3. People and Process Alignment
+- 4. Intent-to-Work
+- 5. Build-and-Validate
+- 6. Run-and-Learn
+- 7. Security and Governance
+- 8. Cost, Efficiency, and Resource Use
+- 9. Evidence Available
+- 10. Known Concerns
+- Review Status
+- Notes
+
 ## 1. Assessment Scope
 
 What team, product, platform, application, repo, delivery stream, or organization is being assessed?

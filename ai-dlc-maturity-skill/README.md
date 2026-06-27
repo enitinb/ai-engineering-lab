@@ -30,6 +30,57 @@ The Skill reviews an AI-enabled delivery practice across:
 
 First-time usage with no arguments explains the Skill, the maturity model, and the assessment artifact workflow.
 
+## Sample prompts and scenarios
+
+Copy any of these to try the Skill. Natural language works best; the flags are shortcuts for a specific output.
+
+**Discovery: "are we doing this right?"**
+```text
+/ai-dlc-maturity We are using AI in our SDLC. Are we doing it the right way?
+```
+Starts a fillable Markdown assessment artifact covering scope, lifecycle, people/process, controls, traceability, security, cost, and evidence. It does not score until you provide answers or enough context.
+
+**Assess directly from context**
+```text
+/ai-dlc-maturity Our team uses AI coding assistants for implementation and unit test drafting. Developers review PRs manually. CI runs tests and linting, but prompts and agent rules are personal, not versioned. We do not track token cost or trace shipped changes back to intent.
+```
+Produces a readable maturity card plus an inline JSON snapshot, scored conservatively with gaps and priority actions.
+
+**Prepare an artifact for a team to fill out**
+```text
+/ai-dlc-maturity Please prepare a Markdown assessment artifact for our platform team to fill out.
+```
+
+**Continue from a completed intake**
+```text
+Continue the AI-DLC maturity assessment from this completed intake: [paste filled Markdown]
+```
+
+**Learn the model first (no scoring)**
+```text
+/ai-dlc-maturity --framework
+/ai-dlc-maturity --questions
+/ai-dlc-maturity --evidence
+```
+
+**Structured maturity review for architects and leaders**
+```text
+/ai-dlc-maturity --review Assess our AI-DLC practice. We use AI across requirements, coding, test generation, PR review, and release notes. We have CI gates but no standard audit schema for model identity, prompt version, rule version, approval, and linked tests.
+```
+
+**Legacy / brownfield systems**
+```text
+/ai-dlc-maturity --brownfield We are applying AI to a large legacy system with poor test coverage and want to modernize it safely.
+```
+
+**Control the output shape**
+```text
+/ai-dlc-maturity --card-only Our team versions prompts and rules, runs CI gates on AI changes, and tracks cost by workflow.
+/ai-dlc-maturity --json-only Our team versions prompts and rules, runs CI gates on AI changes, and tracks cost by workflow.
+```
+
+These same scenarios are encoded as test cases in `ai-dlc-maturity/tests/skill-eval-cases.jsonl` (see `ai-dlc-maturity/tests/README.md` for how to run them).
+
 ## Natural workflow
 
 The Skill is designed to work naturally rather than require many flags.

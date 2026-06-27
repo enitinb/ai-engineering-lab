@@ -10,6 +10,33 @@ This is the living assessment artifact for an AI-enabled SDLC or AI-DLC practice
 
 ---
 
+## Contents
+
+Intake sections (fill these first):
+- 1. Assessment Scope
+- 2. Current AI Usage in the SDLC
+- 3. People and Process Alignment
+- 4. Intent-to-Work
+- 5. Build-and-Validate
+- 6. Run-and-Learn
+- 7. Security and Governance
+- 8. Cost, Efficiency, and Resource Use
+- 9. Evidence Available
+- 10. Known Concerns
+
+Assessment sections (completed by the advisor):
+- Review Status
+- Lifecycle Assessment
+- Dimension Assessment
+- People and Process Alignment
+- Top Gaps
+- Priority Actions
+- Evidence Gaps and Assumptions
+- Structured Assessment Snapshot
+- Assessment Notes and Change Log
+
+---
+
 ## 1. Assessment Scope
 
 What team, product, platform, application, repo, delivery stream, or organization is being assessed?
