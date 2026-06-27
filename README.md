@@ -61,4 +61,7 @@ This is a personal AI engineering lab, but suggestions, issues, and improvements
 
 ## License
 
-See the project folders for license details.
+This repository is released under the [MIT License](./LICENSE). You are free to
+use, modify, and distribute these assets, including commercially, as long as the
+copyright notice and license are retained. Individual project folders may include
+additional notices where relevant.
