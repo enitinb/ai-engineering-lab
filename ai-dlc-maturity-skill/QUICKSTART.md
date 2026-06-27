@@ -64,7 +64,7 @@ When file access is available, you can also point Claude to the completed Markdo
 Default assessment output is:
 
 1. human-readable maturity card
-2. lifecycle and pillar scores
+2. lifecycle and dimension scores
 3. people and process alignment
 4. top gaps and priority actions
 5. inline JSON

@@ -151,7 +151,7 @@ Are any actions auto-approved? If yes, which ones?
 
 ---
 
-## 8. Cost, Performance, and Sustainability
+## 8. Cost, Efficiency, and Resource Use
 
 Do you track AI usage, token cost, inference cost, review effort, defect rate, rework, or productivity impact?
 
@@ -226,16 +226,16 @@ Complete this section after the answers above are filled.
 | Build-and-Validate |  |  |
 | Run-and-Learn |  |  |
 
-## Pillar Assessment
+## Dimension Assessment
 
-| Pillar | Maturity | Evidence-based rationale |
+| Dimension | Maturity | Evidence-based rationale |
 |---|---|---|
-| Operational Excellence |  |  |
-| Security |  |  |
-| Reliability |  |  |
-| Performance Efficiency |  |  |
-| Cost Optimization |  |  |
-| Sustainability |  |  |
+| Observability & Traceability |  |  |
+| Security & Governance |  |  |
+| Reliability & Verification |  |  |
+| Execution Efficiency |  |  |
+| Cost Management |  |  |
+| Resource Stewardship |  |  |
 
 ## People and Process Alignment
 

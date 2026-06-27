@@ -20,9 +20,9 @@ Use this structure:
 | Build-and-Validate | [level] | [evidence-based reason] |
 | Run-and-Learn | [level] | [evidence-based reason] |
 
-## Pillar assessment
+## Dimension assessment
 
-List the six pillars with concise findings.
+List the six dimensions with concise findings.
 
 ## People and process alignment
 

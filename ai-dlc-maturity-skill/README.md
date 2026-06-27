@@ -12,12 +12,12 @@ The Skill reviews an AI-enabled delivery practice across:
 
 - lifecycle maturity
 - people and process alignment
-- operational excellence
-- security
-- reliability
-- performance efficiency
-- cost optimization
-- sustainability
+- observability and traceability
+- security and governance
+- reliability and verification
+- execution efficiency
+- cost management
+- resource stewardship
 - evidence quality
 - improvement loops
 - brownfield readiness when legacy systems are involved
@@ -68,10 +68,10 @@ The Skill works best with natural language, but these modes are available when y
 | Command | What it does | When to use it |
 |---|---|---|
 | `/ai-dlc-maturity --help` | Explains the Skill, available modes, and example usage. | Use this when someone is new to the Skill. |
-| `/ai-dlc-maturity --framework` | Explains the AI-DLC maturity model, lifecycle stages, maturity levels, review pillars, and people/process dimension. | Use this before an assessment when the audience wants the model first. |
-| `/ai-dlc-maturity --questions` | Shows the assessment questions grouped by lifecycle, pillars, and people/process alignment. | Use this to prepare a workshop or review the questionnaire without running an assessment. |
+| `/ai-dlc-maturity --framework` | Explains the AI-DLC maturity model, lifecycle stages, maturity levels, review dimensions, and people/process dimension. | Use this before an assessment when the audience wants the model first. |
+| `/ai-dlc-maturity --questions` | Shows the assessment questions grouped by lifecycle, dimensions, and people/process alignment. | Use this to prepare a workshop or review the questionnaire without running an assessment. |
 | `/ai-dlc-maturity --evidence` | Lists evidence to collect, such as rule files, PR samples, CI logs, security scans, approvals, cost dashboards, incidents, and trace links. | Use this when a team needs to prepare artifacts before scoring maturity. |
-| `/ai-dlc-maturity --well-architected` | Frames the assessment as a Well-Architected-style review of the AI-enabled delivery practice. | Use this with architects, governance teams, platform teams, or leaders who prefer a structured review format. |
+| `/ai-dlc-maturity --review` | Frames the assessment as a structured maturity review of the AI-enabled delivery practice. | Use this with architects, governance teams, platform teams, or leaders who prefer a structured review format. |
 | `/ai-dlc-maturity --brownfield` | Adds legacy-system and existing-codebase questions, including understanding-before-generation, characterization tests, and earned autonomy. | Use this when AI is being applied to existing systems, legacy code, or poorly tested applications. |
 | `/ai-dlc-maturity --card-only <description>` | Produces only the readable maturity assessment card. | Use this when you want a clean human-facing answer without the JSON snapshot. |
 | `/ai-dlc-maturity --json-only <description>` | Produces only the structured JSON snapshot. | Use this when another workflow, dashboard, or automation needs machine-readable output. |

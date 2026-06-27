@@ -34,9 +34,9 @@ When the user provides enough free-form context, run the assessment directly. If
 - `/ai-dlc-maturity` shows the first-time intro and explains the assessment artifact workflow.
 - `/ai-dlc-maturity --help` shows available usage patterns.
 - `/ai-dlc-maturity --framework` explains the maturity framework.
-- `/ai-dlc-maturity --questions` returns assessment questions grouped by lifecycle, pillar, and people/process alignment.
+- `/ai-dlc-maturity --questions` returns assessment questions grouped by lifecycle, dimension, and people/process alignment.
 - `/ai-dlc-maturity --evidence` lists the evidence artifacts teams should collect before a full assessment.
-- `/ai-dlc-maturity --well-architected` returns a Well-Architected-style review format.
+- `/ai-dlc-maturity --review` returns a structured maturity review format.
 - `/ai-dlc-maturity --brownfield` adds brownfield and legacy-system assessment questions.
 - `/ai-dlc-maturity --card-only <description>` returns only the readable assessment.
 - `/ai-dlc-maturity --json-only <description>` returns only inline JSON.
@@ -75,7 +75,7 @@ When file write access is available, create or update `outputs/ai-dlc-maturity-a
 1. Scope the practice being assessed: team, product, platform, repo, delivery stream, or organization.
 2. Classify the current AI-in-SDLC state using `references/maturity-model.yaml`.
 3. Map evidence across lifecycle stages using `references/lifecycle-activities.yaml`.
-4. Score pillars using `references/review-pillars.yaml` and `references/assessment-questions.yaml`.
+4. Score dimensions using `references/review-dimensions.yaml` and `references/assessment-questions.yaml`.
 5. Assess people and process alignment using `references/people-process-alignment.yaml`.
 6. Identify evidence gaps using `references/evidence-catalog.yaml`.
 7. Add brownfield checks from `references/brownfield-questions.yaml` when the user mentions legacy, existing systems, modernization, refactoring, or brownfield delivery.
@@ -98,14 +98,14 @@ Score conservatively. Evidence beats assurance. If the user says a practice exis
 
 ## Core lens
 
-Assess six review pillars:
+Assess six review dimensions:
 
-- Operational Excellence
-- Security
-- Reliability
-- Performance Efficiency
-- Cost Optimization
-- Sustainability
+- Observability & Traceability
+- Security & Governance
+- Reliability & Verification
+- Execution Efficiency
+- Cost Management
+- Resource Stewardship
 
 Assess three lifecycle activities:
 
@@ -137,4 +137,4 @@ Use `scripts/validate_assessment.py` only when the user asks to validate JSON ou
 
 ## Examples and tests
 
-Use `examples/team-assessment.md`, `examples/brownfield-assessment.md`, and `examples/well-architected-review.md` as output references. Use `references/assessment-artifact-template.md` when starting or updating the living Markdown assessment artifact. Use `outputs/` for generated assessment artifacts when file access is available or the user asks for a persisted artifact. Use `tests/skill-eval-cases.jsonl` for manual skill testing.
+Use `examples/team-assessment.md`, `examples/brownfield-assessment.md`, and `examples/structured-review.md` as output references. Use `references/assessment-artifact-template.md` when starting or updating the living Markdown assessment artifact. Use `outputs/` for generated assessment artifacts when file access is available or the user asks for a persisted artifact. Use `tests/skill-eval-cases.jsonl` for manual skill testing.

@@ -7,7 +7,7 @@
     "overall_maturity",
     "summary",
     "lifecycle_scores",
-    "pillar_scores",
+    "dimension_scores",
     "people_process_alignment",
     "top_gaps",
     "priority_actions",
@@ -30,16 +30,16 @@
       },
       "additionalProperties": false
     },
-    "pillar_scores": {
+    "dimension_scores": {
       "type": "object",
-      "required": ["operational_excellence", "security", "reliability", "performance_efficiency", "cost_optimization", "sustainability"],
+      "required": ["observability_traceability", "security_governance", "reliability_verification", "execution_efficiency", "cost_management", "resource_stewardship"],
       "properties": {
-        "operational_excellence": { "type": "string" },
-        "security": { "type": "string" },
-        "reliability": { "type": "string" },
-        "performance_efficiency": { "type": "string" },
-        "cost_optimization": { "type": "string" },
-        "sustainability": { "type": "string" }
+        "observability_traceability": { "type": "string" },
+        "security_governance": { "type": "string" },
+        "reliability_verification": { "type": "string" },
+        "execution_efficiency": { "type": "string" },
+        "cost_management": { "type": "string" },
+        "resource_stewardship": { "type": "string" }
       },
       "additionalProperties": false
     },

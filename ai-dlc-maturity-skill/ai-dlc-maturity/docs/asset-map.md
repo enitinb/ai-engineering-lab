@@ -6,9 +6,9 @@ This Skill uses progressive disclosure. `SKILL.md` contains routing and workflow
 |---|---|
 | `references/maturity-model.yaml` | Maturity levels and scoring rules |
 | `references/lifecycle-activities.yaml` | Intent-to-Work, Build-and-Validate, Run-and-Learn checks |
-| `references/review-pillars.yaml` | Six review pillars and evidence examples |
+| `references/review-dimensions.yaml` | Six review dimensions and evidence examples |
 | `references/people-process-alignment.yaml` | People, ownership, decision rights, process, and feedback loop checks |
-| `references/assessment-questions.yaml` | Review questions grouped by lifecycle and pillar |
+| `references/assessment-questions.yaml` | Review questions grouped by lifecycle and dimension |
 | `references/brownfield-questions.yaml` | Legacy and brownfield-specific checks |
 | `references/evidence-catalog.yaml` | Strong and weak evidence examples |
 | `references/improvement-actions.yaml` | Recommended improvement actions |

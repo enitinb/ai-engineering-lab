@@ -129,7 +129,7 @@ Are any actions auto-approved? If yes, which ones?
 
 **Answer:**
 
-## 8. Cost, Performance, and Sustainability
+## 8. Cost, Efficiency, and Resource Use
 
 Do you track AI usage, token cost, inference cost, review effort, defect rate, rework, or productivity impact?
 
