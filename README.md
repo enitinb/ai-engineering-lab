@@ -1,5 +1,11 @@
 # AI Engineering Lab
 
+![License: MIT](https://img.shields.io/github/license/enitinb/ai-engineering-lab?color=blue)
+![Last commit](https://img.shields.io/github/last-commit/enitinb/ai-engineering-lab?color=success)
+![Claude Skills](https://img.shields.io/badge/Claude-Skills-8A63D2)
+![AI Engineering](https://img.shields.io/badge/AI-Engineering-0A7EA4)
+![Focus: SDLC](https://img.shields.io/badge/focus-SDLC-orange)
+
 A practical lab for AI-assisted coding, software delivery, and engineering workflows.
 
 This repository is where I share reusable assets, experiments, skills, templates, and reference patterns that help bring AI into the software development lifecycle in a practical way. The focus is on artifacts that engineers, architects, and delivery teams can adapt to real work.

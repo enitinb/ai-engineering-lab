@@ -311,9 +311,18 @@ Review all skill files before use. This package includes only simple local scrip
 
 **Stop chasing models. Route the work.**
 
-## Manual testing
+## Testing and evals
 
-Use `tests/skill-eval-cases.jsonl` to test the skill before sharing it. Each case has an input use case and expected recommendation behavior. Run the cases in Claude Code or claude.ai and confirm the skill triggers, produces the recommendation card plus inline JSON by default, avoids named vendors, and recommends the right route type, guardrails, eval plan, and cost controls.
+Use `tests/skill-eval-cases.jsonl` to test the skill before sharing it. Each case follows the Anthropic Agent Skills eval shape (`skills`, `query`, `expected_behavior`), where `expected_behavior` is a rubric of concrete, checkable criteria. The cases cover the first-time intro, every flag, and the main routing scenarios. See `tests/README.md` for the full workflow (offline structure check, running cases against a model, grading with the rubric, and testing across models).
+
+Check the eval file is well-formed offline:
+
+```bash
+cd tests
+python validate_eval_cases.py
+```
+
+Then run the cases in Claude Code or claude.ai and confirm the skill triggers, produces the recommendation card plus inline JSON by default, avoids named vendors, and recommends the right route type, guardrails, eval plan, and cost controls.
 
 For JSON validation, save a recommendation as `recommendation.json`, then run:
 
